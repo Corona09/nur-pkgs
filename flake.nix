@@ -1,12 +1,10 @@
 {
-    description = "My personal NUR repository";
+    description = "Corona's personal NUR repository";
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-        flake-utils-plus.url = "github:gytis-ivaskevicius/flake-utils-plus";
     };
-    outputs = { self, nixpkgs, flake-utils-plus, ... }:
+    outputs = { self, nixpkgs, ... }:
     let
-        utils = flake-utils-plus.lib;
         inherit (nixpkgs) lib;
         systems = [
             "x86_64-linux"
