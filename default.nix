@@ -27,5 +27,4 @@
     st = pkgs.callPackage ./pkgs/st { };
     templates = pkgs.callPackage ./pkgs/templates { };
     todo = pkgs.callPackage ./pkgs/todo { };
-    picgo = pkgs.callPackage ./pkgs/picgo { };
 }
