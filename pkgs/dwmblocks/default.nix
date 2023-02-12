@@ -26,7 +26,6 @@ stdenv.mkDerivation rec {
         sed -i "s@<path to the folder containing block scripts>@$out/blocks@" config.def.h
         patch < ${./fix-makefile.diff}
         sed -i "s@/usr/local@$out@" GNUmakefile
-        sed -i "s@dwm-@${pkgs.callPackage ../dwm { }}/scripts/dwm-@" blocks/*
         '';
 
     postInstall = ''
