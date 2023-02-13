@@ -15,9 +15,9 @@ stdenv.mkDerivation rec {
     src = fetchFromGitHub ({
         owner = "corona09";
         repo = "dwm";
-        rev = "bee65771739d4d4e05d2799d61af04e8b62ad39e";
+        rev = "d5fa522a587bfc92cba84123aa3db2550dcb8287";
         fetchSubmodules = false;
-        sha256 = "sha256-MeEHrfSNCf9e2T12Y5EfMk94ZI8nESV/HNM/AxiSy28=";
+        sha256 = "sha256-w/NVU1H6LSPe8PU/JPHQfOFVnsrwUVLBejjuTomVzzQ=";
     });
 
     buildInputs = [
@@ -32,6 +32,9 @@ stdenv.mkDerivation rec {
 
     makeFlags = [ "CC=${stdenv.cc.targetPrefix}cc" ];
 
+    # preInstall = ''
+    #     mkdir -p $out/scripts
+    #     '';
     postInstall = ''
         cp -f scripts/xbrightness.sh $out/bin/xbrightness.sh
         cp -f scripts/xgetcolortemp.sh $out/bin/xgetcolortemp.sh
