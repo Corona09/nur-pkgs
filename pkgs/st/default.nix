@@ -30,17 +30,14 @@ stdenv.mkDerivation rec {
 
     enableParallelBuilding = true;
 
+    postPatch = ''
+        sed -i "s@/usr/local@$out@" config.mk
+        sed -i "s/tic.*//" Makefile
+        '';
+
     installPhase = ''
-        mkdir -p $out/bin
-        cp -f st $out/bin/st
-        chmod 755 $out/bin/st
-
-        mkdir -p $out/share/applications
-        cp -f ${./st.desktop} $out/share/applications/st.desktop
-        chmod 644 $out/share/applications/st.desktop
-
-        mkdir -p $out/share/icons/hicolor/scalable/apps
-        cp -f ${./st.svg} $out/share/icons/hicolor/scalable/apps/st.svg
-        chmod 644 $out/share/icons/hicolor/scalable/apps/st.svg
+        make install
+        install -D -m644 ${./st.desktop} $out/share/applications/st-256color.desktop
+        install -D -m644 ${./st.svg} $out/share/icons/hicolor/scalable/apps/st.svg
         '';
 }
