@@ -27,4 +27,5 @@
     st = pkgs.callPackage ./pkgs/st { };
     templates = pkgs.callPackage ./pkgs/templates { };
     todo = pkgs.callPackage ./pkgs/todo { };
+    gnome-extension-input-method-panel = pkgs.callPackage ./pkgs/gnome-shell-extension-input-method-panel { };
 }
