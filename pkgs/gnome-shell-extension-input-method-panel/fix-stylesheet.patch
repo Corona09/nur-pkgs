@@ -1,0 +1,18 @@
+diff '--color=auto' -Naur a/stylesheet.css b/stylesheet.css
+--- a/stylesheet.css	2023-02-18 10:48:23.756631328 +0800
++++ b/stylesheet.css	2023-02-18 10:51:59.450295407 +0800
+@@ -19,12 +19,12 @@
+ 
+ .kimpanel-candidate-item:hover {
+   border-radius: 4px;
+-  background-color: rgba(200,200,200,0.33);
++  background-color: rgba(82,196,26,0.33);
+ }
+ 
+ .kimpanel-candidate-item:active {
+   border-radius: 4px;
+-  background-color: rgba(200,200,200,0.33);
++  background-color: rgba(22,119,255,0.33);
+ }
+ 
+ .kimpanel-candidate-item:active:hover {

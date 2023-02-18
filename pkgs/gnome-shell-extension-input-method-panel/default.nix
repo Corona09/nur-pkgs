@@ -15,6 +15,9 @@ stdenv.mkDerivation rec {
         stripRoot = false;
     };
     dontBuild = true;
+    postInstall = ''
+        patch < ${./fix-stylesheet.patch}
+        '';
     installPhase = ''
         mkdir -p $out/share/gnome-shell/extensions
         cp -r -T . $out/share/gnome-shell/extensions/${uuid}
