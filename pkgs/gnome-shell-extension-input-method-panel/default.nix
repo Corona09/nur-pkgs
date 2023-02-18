@@ -15,7 +15,7 @@ stdenv.mkDerivation rec {
         stripRoot = false;
     };
     dontBuild = true;
-    postInstall = ''
+    prePatch = ''
         patch < ${./fix-stylesheet.patch}
         '';
     installPhase = ''
