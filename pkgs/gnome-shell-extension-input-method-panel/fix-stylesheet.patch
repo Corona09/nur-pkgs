@@ -6,13 +6,13 @@ diff '--color=auto' -Naur a/stylesheet.css b/stylesheet.css
  .kimpanel-candidate-item:hover {
    border-radius: 4px;
 -  background-color: rgba(200,200,200,0.33);
-+  background-color: rgba(82,196,26,0.33);
++  background-color: rgba(82,196,26,1.00);
  }
  
  .kimpanel-candidate-item:active {
    border-radius: 4px;
 -  background-color: rgba(200,200,200,0.33);
-+  background-color: rgba(22,119,255,0.33);
++  background-color: rgba(22,119,255,1.00);
  }
  
  .kimpanel-candidate-item:active:hover {
