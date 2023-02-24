@@ -30,5 +30,6 @@
     gnomeExtensions = {
         input-method-panel = pkgs.callPackage ./pkgs/gnome-shell-extensions/input-method-panel { };
         soft-brightness = pkgs.callPackage ./pkgs/gnome-shell-extensions/soft-brightness { };
+        colored-application-menu-icon = pkgs.callPackage ./pkgs/gnome-shell-extensions/colored-application-menu-icon { };
     };
 }
