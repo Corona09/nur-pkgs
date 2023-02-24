@@ -8,8 +8,8 @@ let
 
   srcs = {
     electron = fetchurl {
-      url = "https://dldir1.qq.com/qqfile/qq/QQNT/c005c911/linuxqq_3.0.0-571_x86_64.AppImage";
-      sha256 = "sha256-gKmk2m8pt2ygaHdFCWGo7+ZiQQ67VAvKH4o5OlwwPuE=";
+      url = "https://dldir1.qq.com/qqfile/qq/QQNT/4b2e3220/linuxqq_3.1.0-9572_x86_64.AppImage";
+      sha256 = "sha256-fMWWoS8sqcHnIJzWCqzUbuBipiNLerysOJzeryGmp8k=";
     };
   };
 
