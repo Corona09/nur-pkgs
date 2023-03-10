@@ -33,4 +33,5 @@
         colored-application-menu-icon = pkgs.callPackage ./pkgs/gnome-shell-extensions/colored-application-menu-icon { };
     };
     adoc-utils = pkgs.callPackage ./pkgs/adoc-utils { };
+    lyx-fonts = pkgs.callPackage ./pkgs/lyx-fonts { };
 }
