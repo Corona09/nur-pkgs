@@ -32,4 +32,5 @@
         soft-brightness = pkgs.callPackage ./pkgs/gnome-shell-extensions/soft-brightness { };
         colored-application-menu-icon = pkgs.callPackage ./pkgs/gnome-shell-extensions/colored-application-menu-icon { };
     };
+    adoc-utils = pkgs.callPackage ./pkgs/adoc-utils { };
 }
