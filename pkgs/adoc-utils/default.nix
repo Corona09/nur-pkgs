@@ -52,6 +52,8 @@ stdenv.mkDerivation rec {
         install -Dm644 $smileysans/SmileySans-Oblique.ttf $out/fonts/SmileySans-Oblique.ttf
         install -Dm644 ${./src/theme.yml}   $out/theme/theme.yml
         install -Dm755 ${./src/adoc2pdf.sh} $out/bin/adoc2pdf
+        install -Dm755 ${./src/adoc2pdf-noattr.sh} $out/bin/adoc2pdf-noattr
         sed -i "s@<out>@$out@g" $out/bin/adoc2pdf
+        sed -i "s@<out>@$out@g" $out/bin/adoc2pdf-noattr
         '';
 }
