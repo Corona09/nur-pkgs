@@ -3,4 +3,5 @@
 asciidoctor \
     -a allow-uri-read \
     -a mathematical-format=svg \
-    -r asciidoctor-mathematical $@
+    -r asciidoctor-mathematical \
+    $@

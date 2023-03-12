@@ -2,4 +2,5 @@
 
 asciidoctor-pdf \
     -a pdf-theme=<out>/theme/theme.yml \
-    -a pdf-fontsdir=<out>/fonts $@
+    -a pdf-fontsdir=<out>/fonts \
+    $@
